@@ -1,0 +1,13 @@
+server:
+  port: 8888
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: info, health, prometheus, heapdump, caches, metrics
+      path-mapping:
+        prometheus: metrics
+  server:
+    port: 9100
+
